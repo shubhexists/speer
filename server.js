@@ -38,10 +38,10 @@ app.use("/auth", authRoutes);
 app.use("/api", noteRoutes.router);
 
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+const server = app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
 });
 
-
+module.exports = server;
 
 // eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY1OTU1MDNlMTJjZjAxY2EzMTFjNjA4MSIsImlhdCI6MTcwNDI4NDIyMn0.H4xnknlm0F0eXaLNXZZFVks87XyKH6YUfbOG2YrYiLo
