@@ -24,11 +24,6 @@ const NoteSchema = mongoose.Schema({
       ref: "User",
     },
   ],
-  keywords: [
-    {
-      type: String,
-    },
-  ],
 });
 
 module.exports = mongoose.model("Note", NoteSchema);
